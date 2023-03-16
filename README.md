@@ -34,3 +34,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 npx create-react-app brijesh-portfolio-app --template typescript
 
 npm i @types/styled-components
+npm i polished
+npm i --save react-router-dom
