@@ -13,6 +13,7 @@ export const primaryColors = {
   primarySubtext: "#ff8a71",
   primaryGradientText: "#ae67fa",
   primaryGradientBackground: rgba(0, 40, 83, 1),
+  primaryBorder: "#3e3e3e",
 };
 
 export const secondaryColors = {
