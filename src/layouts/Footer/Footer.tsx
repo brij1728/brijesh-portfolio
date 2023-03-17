@@ -1,9 +1,9 @@
-import { Container } from "./style";
+import { Container, FooterText } from "./style";
 
 export const Footer = () => {
   return (
     <Container>
-      <p>© 2022 | Designed & Coded By Brijesh Kumar </p>
+      <FooterText>© 2022 | Designed & Coded By Brijesh Kumar </FooterText>
     </Container>
   );
 };

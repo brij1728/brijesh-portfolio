@@ -15,3 +15,8 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.primaryColors.primary_01};
 `;
+
+export const FooterText = styled.p`
+  font-size: 0.8rem;
+  margin: 0;
+`;

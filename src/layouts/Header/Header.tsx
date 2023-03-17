@@ -1,11 +1,11 @@
-import { Container, FooterText } from "./style";
+import { Container, HeaderText } from "./style";
 
 export const Header = () => {
   return (
     <Container>
-      <FooterText>
+      <HeaderText>
         Hi, I'm Brijesh A Front End Developer Based In Ballia (U.P.)
-      </FooterText>
+      </HeaderText>
     </Container>
   );
 };

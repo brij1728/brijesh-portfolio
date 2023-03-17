@@ -12,7 +12,7 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.primaryColors.primary_02};
 `;
 
-export const FooterText = styled.p`
+export const HeaderText = styled.p`
   font-size: 0.8rem;
   color: #fff;
   margin: 0;
