@@ -6,4 +6,12 @@ export const Container = styled.div`
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+
+  background-color: ${({ theme }) => theme.primaryColors.primary_01};
 `;

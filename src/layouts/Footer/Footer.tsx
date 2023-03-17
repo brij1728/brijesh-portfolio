@@ -3,7 +3,7 @@ import { Container } from "./style";
 export const Footer = () => {
   return (
     <Container>
-      <div>Footer</div>
+      <p>© 2022 | Designed & Coded By Brijesh Kumar </p>
     </Container>
   );
 };
