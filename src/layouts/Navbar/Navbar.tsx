@@ -1,26 +1,26 @@
-import { Logo, Menu, MenuItem, Nav } from "./style";
-
-import { NavLink } from "react-router-dom";
+import { Logo, Menu, MenuItem, Nav, NavLinks } from "./style";
 
 export const Navbar = () => {
   return (
     <Nav>
-      <Logo to="/">My Website</Logo>
+      <Logo to="/">Brijesh</Logo>
       <Menu>
         <MenuItem>
-          <NavLink to="/works">Works</NavLink>
+          <NavLinks activeClassName="active" to="/works">
+            Works
+          </NavLinks>
         </MenuItem>
         <MenuItem>
-          <NavLink to="/about">About</NavLink>
+          <NavLinks to="/about">About</NavLinks>
         </MenuItem>
         <MenuItem>
-          <NavLink to="/skills">Skills</NavLink>
+          <NavLinks to="/skills">Skills</NavLinks>
         </MenuItem>
         <MenuItem>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLinks to="/contact">Contact</NavLinks>
         </MenuItem>
         <MenuItem>
-          <NavLink to="/resume">Resume</NavLink>
+          <NavLinks to="/resume">Resume</NavLinks>
         </MenuItem>
       </Menu>
     </Nav>

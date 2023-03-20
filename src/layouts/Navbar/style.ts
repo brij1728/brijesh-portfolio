@@ -1,5 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
 import styled from "styled-components";
+
+interface NavLinkProps {
+  activeClassName?: string;
+}
 
 export const Nav = styled.nav`
   flex: 1;
@@ -9,7 +14,7 @@ export const Nav = styled.nav`
   align-items: center;
 
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 100px;
   border-bottom: 2px solid ${({ theme }) => theme.primaryColors.primaryBorder};
 
   background-color: ${({ theme }) => theme.primaryColors.primary_01};
@@ -34,5 +39,14 @@ export const MenuItem = styled.li`
 
   &:first-child {
     margin-left: 0;
+  }
+`;
+
+export const NavLinks = styled(NavLink)<NavLinkProps>`
+  display: flex;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: red;
   }
 `;
