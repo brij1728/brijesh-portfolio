@@ -6,9 +6,7 @@ export const Navbar = () => {
       <Logo to="/">Brijesh</Logo>
       <Menu>
         <MenuItem>
-          <NavLinks activeClassName="active" to="/works">
-            Works
-          </NavLinks>
+          <NavLinks to="/works">Works</NavLinks>
         </MenuItem>
         <MenuItem>
           <NavLinks to="/about">About</NavLinks>

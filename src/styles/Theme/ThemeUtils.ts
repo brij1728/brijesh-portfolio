@@ -3,7 +3,7 @@ import { rgba } from "polished";
 export const primaryColors = {
   primary_01: "#fff",
   primary_02: "#ff4820",
-  primary_03: "#052d56",
+  primary_03: "#3e3e3e",
   primary_04: "#000000",
   primaryBackground: "#ee8b51bd",
   primaryHeader: "#9f71f8",

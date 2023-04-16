@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  flex: 1;
+export const ContactContainer = styled.div`
   display: flex;
-  flex-flow: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `;
