@@ -5,7 +5,7 @@ const navItems = [
   { path: "/about", label: "About" },
   { path: "/skills", label: "Skills" },
   { path: "/contact", label: "Contact" },
-  { path: "/assets/brijesh resume.pdf", label: "Resume", external: true },
+  { path: "/brijesh resume.pdf", label: "Resume", external: true },
 ];
 
 export const Navbar = () => {

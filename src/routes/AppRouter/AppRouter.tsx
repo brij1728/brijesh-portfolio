@@ -1,4 +1,4 @@
-import { About, Contact, Home, Resume, Skills, Works } from "../../pages";
+import { About, Contact, Home, Skills, Works } from "../../pages";
 import { Route, Routes } from "react-router-dom";
 
 export const AppRouter = () => {
@@ -6,7 +6,6 @@ export const AppRouter = () => {
     <Routes>
       <Route index element={<Home />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/resume" element={<Resume />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/works" element={<Works />} />
       <Route path="/contact" element={<Contact />} />
