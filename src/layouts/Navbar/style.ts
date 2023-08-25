@@ -18,6 +18,11 @@ export const Nav = styled.nav`
   border-bottom: 2px solid ${({ theme }) => theme.primaryColors.primaryBorder};
 
   background-color: ${({ theme }) => theme.primaryColors.primary_01};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
 `;
 
 export const Logo = styled(Link)`
@@ -32,6 +37,12 @@ export const Menu = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 `;
 
 export const MenuItem = styled.li`
@@ -45,8 +56,15 @@ export const MenuItem = styled.li`
 export const NavLinks = styled(NavLink)<NavLinkProps>`
   display: flex;
   text-decoration: none;
+  color: #333; // Set the default color
+
   &:hover,
   &:focus {
     color: red;
+  }
+
+  &.${(props) => props.activeClassName} {
+    color: blue; // Set active color to blue
+    font-weight: bold;
   }
 `;

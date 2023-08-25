@@ -1,25 +1,29 @@
 import { Logo, Menu, MenuItem, Nav, NavLinks } from "./style";
 
+const navItems = [
+  { path: "/works", label: "Works" },
+  { path: "/about", label: "About" },
+  { path: "/skills", label: "Skills" },
+  { path: "/contact", label: "Contact" },
+  { path: "/assets/brijesh resume.pdf", label: "Resume", external: true },
+];
+
 export const Navbar = () => {
   return (
     <Nav>
       <Logo to="/">Brijesh</Logo>
       <Menu>
-        <MenuItem>
-          <NavLinks to="/works">Works</NavLinks>
-        </MenuItem>
-        <MenuItem>
-          <NavLinks to="/about">About</NavLinks>
-        </MenuItem>
-        <MenuItem>
-          <NavLinks to="/skills">Skills</NavLinks>
-        </MenuItem>
-        <MenuItem>
-          <NavLinks to="/contact">Contact</NavLinks>
-        </MenuItem>
-        <MenuItem>
-          <NavLinks to="/resume">Resume</NavLinks>
-        </MenuItem>
+        {navItems.map((item, index) => (
+          <MenuItem key={index}>
+            <NavLinks
+              to={item.path}
+              activeClassName="active"
+              target={item.external ? "_blank" : undefined}
+            >
+              {item.label}
+            </NavLinks>
+          </MenuItem>
+        ))}
       </Menu>
     </Nav>
   );

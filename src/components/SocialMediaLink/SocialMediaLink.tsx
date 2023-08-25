@@ -1,42 +1,21 @@
-import {
-  GitHubIcon,
-  IconLink,
-  LinkedInIcon,
-  SocialMediaContainer,
-  TwitterIcon,
-} from "./style";
+// SocialMediaLink.tsx
+import React from "react";
+import { SocialMediaIcon } from "./SocialMediaLinkStyles";
 
-interface ContactProps {
-  githubUrl: string;
-  twitterUrl: string;
-  linkedinUrl: string;
+interface SocialMediaLinkProps {
+  icon: React.ReactNode;
+  href: string;
+  size?: string;
 }
 
-export const SocialMediaLink: React.FC<ContactProps> = ({
-  githubUrl,
-  twitterUrl,
-  linkedinUrl,
+export const SocialMediaLink: React.FC<SocialMediaLinkProps> = ({
+  icon,
+  href,
+  size = "40px",
 }) => {
   return (
-    <SocialMediaContainer>
-      <IconLink href={githubUrl} target="_blank">
-        <GitHubIcon
-          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-          alt="GitHub"
-        />
-      </IconLink>
-      <IconLink href={twitterUrl} target="_blank">
-        <TwitterIcon
-          src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png"
-          alt="Twitter"
-        />
-      </IconLink>
-      <IconLink href={linkedinUrl} target="_blank">
-        <LinkedInIcon
-          src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg"
-          alt="LinkedIn"
-        />
-      </IconLink>
-    </SocialMediaContainer>
+    <SocialMediaIcon href={href} size={size}>
+      {icon}
+    </SocialMediaIcon>
   );
 };
