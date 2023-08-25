@@ -36,3 +36,8 @@ npx create-react-app brijesh-portfolio-app --template typescript
 npm i @types/styled-components
 npm i polished
 npm i --save react-router-dom
+npm install eslint --save-dev
+npm install eslint-plugin-typescript --save-dev
+
+npm install react-pdf
+npm install @react-pdf/renderer --save

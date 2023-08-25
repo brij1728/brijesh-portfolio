@@ -6,4 +6,10 @@ export const Container = styled.div`
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
+
+  height: 100vh;
+`;
+
+export const Button = styled.button`
+  // your button styles
 `;
