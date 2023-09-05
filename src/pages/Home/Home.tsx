@@ -1,22 +1,22 @@
-import { About, Contact, Skills, Works } from "../../pages";
+import { About, Contact, Projects, Skills } from "../../pages";
+import { Container, SectionWrapper } from "./style";
 import { useEffect, useRef } from "react";
 
-import { Container } from "./style";
 import { Header } from "../../layouts";
 import { useLocation } from "react-router-dom";
 
 export const Home = () => {
   const location = useLocation();
 
-  const worksRef = useRef<HTMLDivElement | null>(null);
+  const projectRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const skillsRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     switch (location.pathname) {
-      case "/works":
-        worksRef.current?.scrollIntoView({ behavior: "smooth" });
+      case "/projects":
+        projectRef.current?.scrollIntoView({ behavior: "smooth" });
         break;
       case "/about":
         aboutRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -32,22 +32,20 @@ export const Home = () => {
     }
   }, [location]);
   return (
-    <>
-      <Container>
-        <Header />
-      </Container>
-      <div ref={worksRef}>
-        <Works />
-      </div>
-      <div ref={aboutRef}>
+    <Container>
+      <Header />
+      <SectionWrapper ref={projectRef}>
+        <Projects />
+      </SectionWrapper>
+      <SectionWrapper ref={aboutRef}>
         <About />
-      </div>
-      <div ref={skillsRef}>
+      </SectionWrapper>
+      <SectionWrapper ref={skillsRef}>
         <Skills />
-      </div>
-      <div ref={contactRef}>
+      </SectionWrapper>
+      <SectionWrapper ref={contactRef}>
         <Contact />
-      </div>
-    </>
+      </SectionWrapper>
+    </Container>
   );
 };

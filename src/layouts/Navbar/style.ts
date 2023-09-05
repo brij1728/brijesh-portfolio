@@ -1,70 +1,71 @@
-import { Link, NavLink } from "react-router-dom";
+import {
+  IconButton,
+  AppBar as MuiAppBar,
+  Toolbar as MuiToolbar,
+} from "@mui/material";
+import styled, { css } from "styled-components";
 
-import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-interface NavLinkProps {
-  activeClassName?: string;
-}
-
-export const Nav = styled.nav`
-  flex: 1;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 100%;
-  padding: 20px 100px;
+export const AppBar = styled(MuiAppBar)`
+  background-color: ${({ theme }) => theme.primaryColors.primaryBackground};
   border-bottom: 2px solid ${({ theme }) => theme.primaryColors.primaryBorder};
 
-  background-color: ${({ theme }) => theme.primaryColors.primary_01};
+  ${({ theme }) => `
+    @media (max-width: ${theme.breakpoints.sm}px) {
+      padding: 10px 20px;
+    }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 10px 20px;
-  }
+    @media (min-width: ${theme.breakpoints.sm}px) and (max-width: ${theme.breakpoints.md}px) {
+      padding: 10px 20px;
+    }
+
+    @media (min-width: ${theme.breakpoints.md}px) and (max-width: ${theme.breakpoints.lg}px) {
+      padding: 20px 50px;
+    }
+  `}
 `;
 
-export const Logo = styled(Link)`
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-`;
-
-export const Menu = styled.ul`
+export const Toolbar = styled(MuiToolbar)`
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+  justify-content: space-between;
 `;
 
-export const MenuItem = styled.li`
-  margin-left: 1rem;
-
-  &:first-child {
-    margin-left: 0;
-  }
-`;
-
-export const NavLinks = styled(NavLink)<NavLinkProps>`
-  display: flex;
+export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #333; // Set the default color
+  color: inherit;
+  margin-right: 20px;
+`;
 
-  &:hover,
-  &:focus {
-    color: red;
-  }
+export const HamburgerIconButton = styled(IconButton)`
+  ${({ theme }) => css`
+    // appear only for small screens
+    @media only screen and (max-width: ${theme.breakpoints.sm}) {
+      display: block;
+    }
 
-  &.${(props) => props.activeClassName} {
-    color: blue; // Set active color to blue
-    font-weight: bold;
-  }
+    // disappear for larger screens
+    @media only screen and (min-width: ${theme.breakpoints.sm}) {
+      display: none;
+    }
+  `}
+`;
+
+export const NavItems = styled.div`
+  ${({ theme }) => css`
+    // hidden for small screens
+    @media only screen and (max-width: ${theme.breakpoints.md}) {
+      display: none;
+    }
+    // appear for larger screens
+    @media only screen and (min-width: ${theme.breakpoints.md}) {
+      display: flex;
+      gap: 20px;
+    }
+  `}
+`;
+
+export const Logo = styled.img`
+  width: 100%;
+  max-width: 200px;
 `;

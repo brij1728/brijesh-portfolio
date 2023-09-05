@@ -1,37 +1,27 @@
-import { rgba } from "polished";
+// import { rgba } from "polished";
 
 export const primaryColors = {
-  primary_01: "#fff",
-  primary_02: "#ff4820",
-  primary_03: "#3e3e3e",
-  primary_04: "#000000",
-  primaryBackground: "#ee8b51bd",
-  primaryHeader: "#9f71f8",
-  primaryFooter: "#031b34",
-  primaryBlog: "#042c54",
-  primaryText: "#81afdd",
-  primarySubtext: "#ff8a71",
-  primaryGradientText: "#ae67fa",
-  primaryGradientBackground: rgba(0, 40, 83, 1),
-  primaryBorder: "#3e3e3e",
+  primaryBackground: "#F5F5F5",
+  primaryText: "#4A4A4A",
+  accent1: "#FF6B6B",
+  primaryBorder: "#D1D1D1",
+  active: "#E55959",
 };
 
 export const secondaryColors = {
-  secondary_01: "red",
-  secondary_02: "yellow",
-  secondary_03: " #0e0e0e",
-  secondaryBackground: "#ff0000",
-  secondaryGradientText: "#f49867",
-  secondarySubtext: "#71E5FF",
-  secondaryGradientBackground: rgba(4, 12, 24, 1),
+  secondaryBackground: "#3498eb",
+  secondaryText: "#E1E1E1",
+  accent2: "#E74C3C",
+  secondaryBorder: "#28283D",
 };
 
 export const breakpoints = {
-  xs: "0",
-  sm: "650px",
-  md: "960px",
-  lg: "1280px",
-  xl: "1920px",
+  xs: "0px", // Extra Small devices
+  sm: "576px", // Small devices
+  md: "768px", // Medium devices
+  lg: "992px", // Large devices
+  xl: "1200px", // Extra Large devices
+  xxl: "1400px", // Extra Extra Large devices (This can vary, sometimes 1600px)
 };
 
 const sizes = {
@@ -79,8 +69,8 @@ export const fontSizes = {
   },
   h1: {
     sm: 24,
-    md: 26,
-    lg: 30,
+    md: 30,
+    lg: 40,
   },
 };
 

@@ -3,7 +3,7 @@ import {
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from "react-icons/ai";
-import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from "../../constants";
+import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from "../../utils/constants";
 
 import { SocialMediaLink } from "../SocialMediaLink";
 import { SocialMediaList } from "./SocialMediaLinksStyles";

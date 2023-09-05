@@ -39,6 +39,9 @@ npm i --save react-router-dom
 npm install eslint --save-dev
 npm install eslint-plugin-typescript --save-dev
 npm install react-icons
+npm install @mui/material @mui/styled-engine-sc styled-components
+npm install @emotion/react @emotion/styled
+npm install @mui/icons-material
 
 npm install react-pdf
 npm install @react-pdf/renderer --save

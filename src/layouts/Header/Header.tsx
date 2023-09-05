@@ -1,4 +1,6 @@
-import { Container, HeaderText } from "./style";
+import { Container, HeaderImage, HeaderText } from "./style";
+
+import { ProfilePhoto } from "../../assets";
 
 export const Header = () => {
   return (
@@ -6,6 +8,7 @@ export const Header = () => {
       <HeaderText>
         Hi, I'm Brijesh A Front End Developer Based In Ballia (U.P.)
       </HeaderText>
+      <HeaderImage src={ProfilePhoto} alt="hero" />
     </Container>
   );
 };

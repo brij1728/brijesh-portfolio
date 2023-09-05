@@ -7,13 +7,14 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  position: absolute;
+  position: sticky;
+  top: 0;
   bottom: 0;
   width: 100%;
   height: 50px;
-  padding-top: 10px;
+  padding: 10px;
 
-  background-color: ${({ theme }) => theme.primaryColors.primary_01};
+  background-color: ${({ theme }) => theme.secondaryColors.secondaryBackground};
 `;
 
 export const FooterText = styled.p`
