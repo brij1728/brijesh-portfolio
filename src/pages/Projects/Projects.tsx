@@ -1,10 +1,13 @@
-import { Container } from "./style";
+import { Container, ProjectHeading } from "./style";
+
 import { ProjectCard } from "../../components";
 import { projects } from "../../utils";
 
 export const Projects = () => {
   return (
     <Container>
+      <ProjectHeading>Projects</ProjectHeading>
+
       {projects.map((project) => {
         return (
           <ProjectCard

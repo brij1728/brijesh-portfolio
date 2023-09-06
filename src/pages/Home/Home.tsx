@@ -1,4 +1,4 @@
-import { About, Contact, Projects, Skills } from "../../pages";
+import { Contact, Projects, Skills } from "../../pages";
 import { Container, SectionWrapper } from "./style";
 import { useEffect, useRef } from "react";
 
@@ -37,9 +37,9 @@ export const Home = () => {
       <SectionWrapper ref={projectRef}>
         <Projects />
       </SectionWrapper>
-      <SectionWrapper ref={aboutRef}>
+      {/* <SectionWrapper ref={aboutRef}>
         <About />
-      </SectionWrapper>
+      </SectionWrapper> */}
       <SectionWrapper ref={skillsRef}>
         <Skills />
       </SectionWrapper>

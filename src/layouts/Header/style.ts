@@ -31,7 +31,7 @@ export const HeaderText = styled.h1`
   margin: 0;
   overflow-wrap: break-word;
 
-  font-size: ${({ theme }) => theme.fontSizes.h1.lg}px;
+  font-size: ${({ theme }) => theme.fontSizes.h1.lg};
 
   ${({ theme }) => css`
     // for screens smaller than 576px

@@ -1,2 +1,15 @@
 export { default as ProfilePhoto } from "./brijesh_photo.jpeg";
 export { default as AppLogo } from "./brijesh_app_logo.png";
+export { default as TypeScriptIcon } from "./typescript.svg";
+export { default as JavaScriptIcon } from "./java-script.svg";
+export { default as HTMLIcon } from "./html5-plain.svg";
+export { default as CSSIcon } from "./css3-plain.svg";
+export { default as ReactIcon } from "./react.svg";
+export { default as ReactNativeIcon } from "./react-native.svg";
+export { default as MUIIcon } from "./mui.svg";
+export { default as StyledComponentsIcon } from "./style-components.svg";
+export { default as ContextAPIIcon } from "./context-api.svg";
+export { default as ReduxIcon } from "./redux.svg";
+export { default as FigmaIcon } from "./figma.svg";
+export { default as GitIcon } from "./git.svg";
+export { default as GitHubIcon } from "./github.svg";

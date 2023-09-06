@@ -42,6 +42,7 @@ npm install react-icons
 npm install @mui/material @mui/styled-engine-sc styled-components
 npm install @emotion/react @emotion/styled
 npm install @mui/icons-material
+npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
 
 npm install react-pdf
 npm install @react-pdf/renderer --save

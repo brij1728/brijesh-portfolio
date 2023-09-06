@@ -40,3 +40,8 @@ export const Container = styled.div`
     }
   `}
 `;
+
+export const ProjectHeading = styled.h2`
+  font-size: ${({ theme }) => theme.fontSizes.h3.lg};
+  font-weight: 400;
+`;
