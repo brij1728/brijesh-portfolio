@@ -1,11 +1,12 @@
-import { CardContent, ListItemText } from "@mui/material";
 import {
   SkillCardList,
   SkillCardListItem,
   SkillCardTitle,
+  SkillListItemText,
   StyledCard,
 } from "./SkillCardStyles";
 
+import { CardContent } from "@mui/material";
 import { SkillIcon } from "../SkillIcon";
 import { SkillType } from "../../types";
 
@@ -19,7 +20,7 @@ export const SkillCard: React.FC<SkillType> = ({ title, skill }) => {
           {skill.map((item) => (
             <SkillCardListItem key={item.name}>
               <SkillIcon iconName={item.icon || "default-icon-class"} />
-              <ListItemText primary={item.name} />
+              <SkillListItemText primary={item.name} />
             </SkillCardListItem>
           ))}
         </SkillCardList>
