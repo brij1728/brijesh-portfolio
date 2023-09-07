@@ -6,11 +6,6 @@ import {
   TitleContainer,
 } from "./ContactStyles";
 
-// import AnimateInView from "../Animation";
-// Contact.tsx
-import React from "react";
-import { SocialMediaLinks } from "../../components";
-
 export const Contact = () => {
   return (
     <ContactContainer id="contact">
@@ -29,7 +24,6 @@ export const Contact = () => {
             {/* </AnimateInView> */}
           </TitleContainer>
         </MainTextContainer>
-        <SocialMediaLinks />
         <ContactButton>
           <a href="mailto:bk10895@gmail.com">Contact Me</a>
         </ContactButton>

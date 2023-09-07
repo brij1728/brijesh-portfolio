@@ -1,4 +1,6 @@
-import { ProjectType, SkillType } from "../../../types";
+import { GITHUB_URL, LINKEDIN_URL, TWITTER_X_URL } from "../SocialMediaUrls";
+import { GitHubLinkIcon, LinkedInIcon, TwitterXIcon } from "../../../assets";
+import { ProjectType, SkillType, SocialMediaType } from "../../../types";
 
 export const projects: ProjectType[] = [
   {
@@ -103,5 +105,23 @@ export const skills: SkillType[] = [
         level: 90,
       },
     ],
+  },
+];
+
+export const socialMedia: SocialMediaType[] = [
+  {
+    name: "LinkedIn",
+    icon: LinkedInIcon,
+    url: LINKEDIN_URL,
+  },
+  {
+    name: "Github",
+    icon: GitHubLinkIcon,
+    url: GITHUB_URL,
+  },
+  {
+    name: "Twitter-X",
+    icon: TwitterXIcon,
+    url: TWITTER_X_URL,
   },
 ];
