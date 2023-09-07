@@ -1,4 +1,4 @@
-import { Card, List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Card, CardHeader, List, ListItem, ListItemText } from "@mui/material";
 import styled, { css } from "styled-components";
 
 export const StyledCard = styled(Card)`
@@ -43,16 +43,19 @@ export const StyledCard = styled(Card)`
   `}
 `;
 
-export const SkillCardTitle = styled(Typography)`
+export const SkillCardTitle = styled(CardHeader)`
   margin-bottom: 1rem;
   text-align: start;
-  font-weight: bold;
+
+  & .MuiCardHeader-title {
+    font-weight: 550;
+  }
 `;
 
 export const SkillCardListItem = styled(ListItem)`
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start; // Aligns items to the top
+  align-items: start; // Aligns items to the top
   padding-bottom: 1rem;
   break-inside: avoid; // Prevent breaking inside
 
@@ -61,6 +64,10 @@ export const SkillCardListItem = styled(ListItem)`
   & > svg {
     // Assuming the icon is either a div, img, or svg
     margin-right: 10px; // Spacing between the icon and the text
+  }
+
+  &.MuiListItem-root {
+    align-items: start; // Aligns items to the top
   }
 `;
 

@@ -13,9 +13,8 @@ import { SkillType } from "../../types";
 export const SkillCard: React.FC<SkillType> = ({ title, skill }) => {
   return (
     <StyledCard>
+      <SkillCardTitle title={title} />
       <CardContent>
-        <SkillCardTitle variant="h5">{title}</SkillCardTitle>
-
         <SkillCardList>
           {skill.map((item) => (
             <SkillCardListItem key={item.name}>
