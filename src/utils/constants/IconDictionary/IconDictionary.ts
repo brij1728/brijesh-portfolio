@@ -1,0 +1,31 @@
+import {
+  CSSIcon,
+  ContextAPIIcon,
+  FigmaIcon,
+  GitHubIcon,
+  GitIcon,
+  HTMLIcon,
+  JavaScriptIcon,
+  MUIIcon,
+  ReactIcon,
+  ReactNativeIcon,
+  ReduxIcon,
+  StyledComponentsIcon,
+  TypeScriptIcon,
+} from "../../../assets";
+
+export const icons = {
+  "typescript-plain": TypeScriptIcon,
+  "javascript-plain": JavaScriptIcon,
+  "html5-plain": HTMLIcon,
+  "css3-plain": CSSIcon,
+  "react-original": ReactIcon,
+  "reactnative-plain": ReactNativeIcon,
+  "materialui-plain": MUIIcon,
+  "styledcomponents-plain": StyledComponentsIcon,
+  "contextapi-original": ContextAPIIcon,
+  "redux-original": ReduxIcon,
+  "github-original": GitHubIcon,
+  "git-plain": GitIcon,
+  "figma-plain": FigmaIcon,
+};
