@@ -1,32 +1,30 @@
 import {
-  ContactButton,
   ContactContainer,
   MainBackground,
   MainTextContainer,
+  SocialMediaContainer,
   TitleContainer,
 } from "./ContactStyles";
 
-export const Contact = () => {
+import { SocialMediaCard } from "../../components";
+import { socialMedia } from "../../utils";
+
+export const Contact: React.FC = () => {
   return (
     <ContactContainer id="contact">
+      <TitleContainer>Contact</TitleContainer>
       <MainBackground>
         <MainTextContainer>
-          <TitleContainer>
-            <h1>Contact</h1>
-            {/* <AnimateInView> */}
-            <div>
-              <p>
-                If you like my work,
-                <br /> why not contact me for your next project?
-              </p>
-              <p>You can find me on social media or send me a message here!</p>
-            </div>
-            {/* </AnimateInView> */}
-          </TitleContainer>
+          <h3>Let's Collaborate</h3>
+          <p>
+            Connect with me on social media or drop me a line directly from
+            here. Let's bring your ideas to life!
+          </p>
         </MainTextContainer>
-        <ContactButton>
-          <a href="mailto:bk10895@gmail.com">Contact Me</a>
-        </ContactButton>
+
+        <SocialMediaContainer>
+          <SocialMediaCard items={socialMedia} />
+        </SocialMediaContainer>
       </MainBackground>
     </ContactContainer>
   );

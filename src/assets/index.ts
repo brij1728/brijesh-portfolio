@@ -16,3 +16,4 @@ export { default as GitHubIcon } from "./github.svg";
 export { default as GitHubLinkIcon } from "./icons8-github.svg";
 export { default as LinkedInIcon } from "./icons8-linkedin.svg";
 export { default as TwitterXIcon } from "./icons8-twitter.svg";
+export { default as EmailIcon } from "./email.svg";

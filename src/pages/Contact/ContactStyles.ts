@@ -1,71 +1,71 @@
-// ContactStyles.ts
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+import { Card } from "@mui/material";
 
 export const ContactContainer = styled.div`
-  width: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 
-  // Add other styles from .container here...
-
-  @media (max-width: 768px) {
+  ${({ theme }) => theme.breakpoints.md} {
     padding: 10px;
   }
 `;
 
 export const MainBackground = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  width: 100%;
 
-  // Add styles from .mainBg here...
-
-  @media (max-width: 768px) {
-    // ...styles for tablet and mobile view
-  }
-`;
-
-export const MainTextContainer = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-
-  // Add styles from .mainText here...
-
-  @media (max-width: 768px) {
-    padding: 0 20px;
-  }
-`;
-
-export const TitleContainer = styled.div`
-  text-align: center;
-  margin-bottom: 20px;
-
-  // Add styles from .title here...
-
-  @media (max-width: 768px) {
-    margin-bottom: 10px;
-
-    h1 {
-      font-size: 1.5rem;
+  ${({ theme }) => css`
+    @media only screen and (min-width: ${theme.breakpoints.md}) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch; // this ensures that child elements stretch to the maximum height
     }
-  }
+  `}
 `;
 
-export const ContactButton = styled.button`
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  align-self: center; // To make sure button is centered if its container is a flexbox
+export const MainTextContainer = styled(Card)`
+  padding: 20px;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; // Adjust content direction
+  justify-content: center;
 
-  &:hover {
-    background-color: #555;
-  }
+  ${({ theme }) => css`
+    @media only screen and (min-width: ${theme.breakpoints.md}) {
+      height: 100%; // This will stretch the card to the height of the parent
+    }
+  `}
+`;
 
-  @media (max-width: 768px) {
-    padding: 8px 16px;
-  }
+export const SocialMediaContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 460px;
+  justify-content: center;
+
+  ${({ theme }) => css`
+    @media only screen and (min-width: ${theme.breakpoints.md}) {
+      height: 100%;
+    }
+  `}
+`;
+
+export const TitleContainer = styled.h3`
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 20px;
 `;

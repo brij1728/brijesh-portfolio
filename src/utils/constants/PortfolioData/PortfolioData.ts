@@ -1,5 +1,15 @@
-import { GITHUB_URL, LINKEDIN_URL, TWITTER_X_URL } from "../SocialMediaUrls";
-import { GitHubLinkIcon, LinkedInIcon, TwitterXIcon } from "../../../assets";
+import {
+  EMAIL_URL,
+  GITHUB_URL,
+  LINKEDIN_URL,
+  TWITTER_X_URL,
+} from "../SocialMediaUrls";
+import {
+  EmailIcon,
+  GitHubLinkIcon,
+  LinkedInIcon,
+  TwitterXIcon,
+} from "../../../assets";
 import { ProjectType, SkillType, SocialMediaType } from "../../../types";
 
 export const projects: ProjectType[] = [
@@ -123,5 +133,10 @@ export const socialMedia: SocialMediaType[] = [
     name: "Twitter-X",
     icon: TwitterXIcon,
     url: TWITTER_X_URL,
+  },
+  {
+    name: "Email",
+    icon: EmailIcon,
+    url: EMAIL_URL,
   },
 ];
