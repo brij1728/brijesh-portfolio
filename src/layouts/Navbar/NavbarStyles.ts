@@ -27,13 +27,12 @@ export const AppBar = styled(MuiAppBar)`
 
 export const Toolbar = styled(MuiToolbar)`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
-  margin-right: 20px;
 `;
 
 export const HamburgerIconButton = styled(IconButton)`
@@ -51,6 +50,7 @@ export const HamburgerIconButton = styled(IconButton)`
 `;
 
 export const NavItems = styled.div`
+  display: flex;
   ${({ theme }) => css`
     // hidden for small screens
     @media only screen and (max-width: ${theme.breakpoints.md}) {
@@ -58,7 +58,6 @@ export const NavItems = styled.div`
     }
     // appear for larger screens
     @media only screen and (min-width: ${theme.breakpoints.md}) {
-      display: flex;
       gap: 20px;
     }
   `}

@@ -17,11 +17,10 @@ export const secondaryColors = {
 
 export const breakpoints = {
   xs: "0px", // Extra Small devices
-  sm: "576px", // Small devices
-  md: "768px", // Medium devices
-  lg: "992px", // Large devices
-  xl: "1200px", // Extra Large devices
-  xxl: "1400px", // Extra Extra Large devices (This can vary, sometimes 1600px)
+  sm: "600px", // Small devices
+  md: "900px", // Medium devices
+  lg: "1200px", // Large devices
+  xl: "1536px", // Extra Large devices
 };
 
 const sizes = {

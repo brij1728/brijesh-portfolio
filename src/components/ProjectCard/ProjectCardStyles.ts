@@ -7,8 +7,12 @@ export const StyledCard = styled(Card)`
     height: auto;
 
     ${({ theme }) => css`
-      @media (max-width: ${theme.breakpoints.md}) {
-        width: 200px;
+      @media (max-width: ${theme.breakpoints.sm}) {
+        width: 100%;
+      }
+      @media (min-width: ${theme.breakpoints.sm} and (max-width: ${theme
+          .breakpoints.md})) {
+        width: 250px;
       }
     `}
   }

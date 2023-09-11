@@ -1,5 +1,5 @@
 import { Contact, Projects, Skills } from "../../pages";
-import { Container, SectionWrapper } from "./style";
+import { Container, SectionWrapper } from "./HomeStyles";
 import { useEffect, useRef } from "react";
 
 import { Header } from "../../layouts";

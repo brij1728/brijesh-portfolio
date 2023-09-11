@@ -19,5 +19,4 @@ export const SkillList = styled.div`
   flex-flow: row nowrap;
   justify-content: center;
   gap: 10px;
-  width: 100%;
 `;

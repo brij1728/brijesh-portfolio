@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ProjectContainer = styled.div`
   flex: 1;
@@ -20,5 +20,10 @@ export const ProjectListContainer = styled.div`
   flex-flow: row nowrap;
   justify-content: center;
   gap: 10px;
-  width: 100%;
+
+  ${({ theme }) => css`
+    @media (max-width: ${theme.breakpoints.sm}) {
+      flex-flow: column nowrap;
+    }
+  `}
 `;

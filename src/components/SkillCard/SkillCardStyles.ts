@@ -5,8 +5,13 @@ export const StyledCard = styled(Card)`
   &.MuiCard-root {
     width: 300px;
     height: auto;
+
     ${({ theme }) => css`
-      @media (max-width: ${theme.breakpoints.md}) {
+      @media (max-width: ${theme.breakpoints.sm}) {
+        width: 100%;
+      }
+      @media (min-width: ${theme.breakpoints.sm} and (max-width: ${theme
+          .breakpoints.md})) {
         width: 250px;
       }
     `}
