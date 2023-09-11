@@ -15,10 +15,10 @@ export const secondaryColors = {
 };
 
 export const accentColors = {
-  accent: "#e04255",
-  accentLink: "#e04255",
-  actionLinkHover: "#b83240",
-  error: "#d63031",
+  accent: "#0057a8",
+  accentLink: "#0057a8",
+  actionLinkHover: "#003f7f",
+  error: "#e04255",
 };
 
 export const breakpoints = {
