@@ -18,12 +18,14 @@ export const MainTextContainer = styled.div`
 
 export const TitleContainer = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.h3.lg};
+  color: ${({ theme }) => theme.primaryColors.titleText};
   font-weight: 600;
   margin-bottom: 16px;
 `;
 
 export const SubtitleContainer = styled.h4`
   font-size: ${({ theme }) => theme.fontSizes.h4.lg};
+  color: ${({ theme }) => theme.primaryColors.titleText};
   font-weight: 600;
   margin-bottom: 5px;
 `;
@@ -34,4 +36,6 @@ export const TextContainer = styled.p`
 
   margin: 0;
   margin-bottom: 5px;
+
+  color: ${({ theme }) => theme.primaryColors.primaryText};
 `;

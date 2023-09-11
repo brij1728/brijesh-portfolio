@@ -1,9 +1,10 @@
-import { Box, CardActions, Link } from "@mui/material";
+import { Box, CardActions } from "@mui/material";
 import {
   StyledCardContent,
   StyledDescription,
   StyledGithubLink,
   StyledTitle,
+  StyledTitleLink,
 } from "./ProjectCardStyles";
 
 import { FaGithub } from "react-icons/fa";
@@ -15,9 +16,13 @@ export const ProjectCard: React.FC<ProjectType> = (props) => {
     <StyledCard>
       <StyledCardContent>
         <StyledTitle variant="h5">
-          <Link href={props.projectUrl} underline="none" target="_blank">
+          <StyledTitleLink
+            href={props.projectUrl}
+            underline="none"
+            target="_blank"
+          >
             {props.title}
-          </Link>
+          </StyledTitleLink>
         </StyledTitle>
 
         <StyledDescription variant="body2">

@@ -1,4 +1,5 @@
 import {
+  accentColors,
   breakpoints,
   fontSizes,
   primaryColors,
@@ -15,6 +16,7 @@ declare module "styled-components" {
     space: string[];
     primaryColors: { [key in keyof typeof primaryColors]: string };
     secondaryColors: { [key in keyof typeof secondaryColors]: string };
+    accentColors: { [key in keyof typeof accentColors]: string };
   }
 }
 
@@ -23,6 +25,7 @@ export const theme: DefaultTheme = {
   space,
   primaryColors,
   secondaryColors,
+  accentColors,
   fontSizes,
 };
 

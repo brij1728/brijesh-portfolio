@@ -2,17 +2,23 @@
 
 export const primaryColors = {
   primaryBackground: "#F5F5F5",
-  primaryText: "#4A4A4A",
-  accent1: "#FF6B6B",
-  primaryBorder: "#D1D1D1",
-  active: "#E55959",
+  primaryText: "#333",
+  titleText: "#2c3e50",
+  cardBackground: "#fff",
 };
 
 export const secondaryColors = {
-  secondaryBackground: "#3498eb",
-  secondaryText: "#1976d2",
-  accent2: "#E74C3C",
-  secondaryBorder: "#28283D",
+  secondaryBackground: "#2d75a3",
+  cardHeader: "#205c8a",
+  cardHeaderLink: "#4a90e2",
+  secondaryText: "#fafafa",
+};
+
+export const accentColors = {
+  accent: "#e04255",
+  accentLink: "#e04255",
+  actionLinkHover: "#b83240",
+  error: "#d63031",
 };
 
 export const breakpoints = {

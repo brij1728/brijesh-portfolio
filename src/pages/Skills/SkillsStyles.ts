@@ -10,6 +10,7 @@ export const SkillsContainer = styled.div`
 
 export const SkillTitle = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.h3.lg};
+  color: ${({ theme }) => theme.primaryColors.titleText};
   font-weight: 600;
   align-items: center;
   padding: 16px;

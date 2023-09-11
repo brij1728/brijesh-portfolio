@@ -27,8 +27,14 @@ export const StyledCardContent = styled(CardContent)`
 
 export const StyledTitle = styled(Typography)`
   font-size: ${({ theme }) => theme.fontSizes.h3.lg};
-  color: ${({ theme }) => theme.primaryColors.primaryText};
+  color: ${({ theme }) => theme.secondaryColors.cardHeader};
   margin: 0;
+`;
+
+export const StyledTitleLink = styled(Link)`
+  &.MuiLink-root {
+    color: ${({ theme }) => theme.secondaryColors.cardHeader};
+  }
 `;
 export const StyledDescription = styled(Typography)`
   font-size: ${({ theme }) => theme.fontSizes.small};
@@ -38,13 +44,17 @@ export const StyledDescription = styled(Typography)`
 
 export const StyledGithubLink = styled(Link)`
   font-size: ${({ theme }) => theme.fontSizes.small};
-  color: ${({ theme }) => theme.primaryColors.primaryText};
+
   margin: 0;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   align-items: center;
 
+  &.MuiLink-root {
+    color: ${({ theme }) => theme.accentColors.accentLink};
+  }
+
   &:hover {
-    color: ${({ theme }) => theme.primaryColors.accent1};
+    color: ${({ theme }) => theme.accentColors.actionLinkHover};
   }
 `;

@@ -37,7 +37,7 @@ export const SkillCardContainer = styled(CardContent)`
 
 export const SkillCardTitle = styled(Typography)`
   font-size: ${({ theme }) => theme.fontSizes.h3.lg};
-  color: ${({ theme }) => theme.secondaryColors.secondaryText};
+  color: ${({ theme }) => theme.secondaryColors.cardHeader};
 
   padding: 16px;
   padding-bottom: 0;
