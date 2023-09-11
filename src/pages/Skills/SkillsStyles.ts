@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const SkillsContainer = styled.div`
+  flex: 1;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -17,6 +18,13 @@ export const SkillTitle = styled.h3`
 export const SkillList = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  height: max-content;
   gap: 10px;
+
+  ${({ theme }) => css`
+    @media (max-width: ${theme.breakpoints.sm}) {
+      flex-flow: column nowrap;
+      width: 100%;
+    }
+  `}
 `;

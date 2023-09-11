@@ -1,10 +1,20 @@
-import { Card, List, ListItem, ListItemText, Typography } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from "@mui/material";
 import styled, { css } from "styled-components";
 
 export const StyledCard = styled(Card)`
   &.MuiCard-root {
+    display: flex;
+    flex-flow: column;
     width: 300px;
-    height: auto;
+    min-height: 100%;
+    justify-content: space-between;
 
     ${({ theme }) => css`
       @media (max-width: ${theme.breakpoints.sm}) {
@@ -18,11 +28,19 @@ export const StyledCard = styled(Card)`
   }
 `;
 
+export const SkillCardContainer = styled(CardContent)`
+  flex: 1;
+  &.MuiCardContent-root {
+    padding: 0;
+  }
+`;
+
 export const SkillCardTitle = styled(Typography)`
   font-size: ${({ theme }) => theme.fontSizes.h3.lg};
   color: ${({ theme }) => theme.secondaryColors.secondaryText};
 
   padding: 16px;
+  padding-bottom: 0;
 `;
 
 export const SkillCardList = styled(List)`

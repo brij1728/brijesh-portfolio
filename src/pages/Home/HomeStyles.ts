@@ -5,8 +5,9 @@ export const Container = styled.div`
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  align-items: center;
   padding: 16px;
+  max-width: 920px;
+  margin: 0 auto;
 `;
 
 export const SectionWrapper = styled.div`

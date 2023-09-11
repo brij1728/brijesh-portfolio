@@ -1,10 +1,13 @@
-import { Card, Link, Typography } from "@mui/material";
+import { Card, CardContent, Link, Typography } from "@mui/material";
 import styled, { css } from "styled-components";
 
 export const StyledCard = styled(Card)`
   &.MuiCard-root {
+    flex-flow: column;
+    display: flex;
     width: 300px;
-    height: auto;
+    min-height: 100%;
+    justify-content: space-between;
 
     ${({ theme }) => css`
       @media (max-width: ${theme.breakpoints.sm}) {
@@ -16,6 +19,10 @@ export const StyledCard = styled(Card)`
       }
     `}
   }
+`;
+
+export const StyledCardContent = styled(CardContent)`
+  flex: 1;
 `;
 
 export const StyledTitle = styled(Typography)`

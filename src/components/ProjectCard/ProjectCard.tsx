@@ -1,5 +1,6 @@
-import { Box, CardActions, CardContent, Link } from "@mui/material";
+import { Box, CardActions, Link } from "@mui/material";
 import {
+  StyledCardContent,
   StyledDescription,
   StyledGithubLink,
   StyledTitle,
@@ -12,7 +13,7 @@ import { StyledCard } from "../SkillCard/SkillCardStyles";
 export const ProjectCard: React.FC<ProjectType> = (props) => {
   return (
     <StyledCard>
-      <CardContent>
+      <StyledCardContent>
         <StyledTitle variant="h5">
           <Link href={props.projectUrl} underline="none" target="_blank">
             {props.title}
@@ -22,7 +23,7 @@ export const ProjectCard: React.FC<ProjectType> = (props) => {
         <StyledDescription variant="body2">
           {props.description}
         </StyledDescription>
-      </CardContent>
+      </StyledCardContent>
       <CardActions>
         <Box flexGrow={1}></Box>
         <StyledGithubLink

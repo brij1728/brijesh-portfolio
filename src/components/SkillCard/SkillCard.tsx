@@ -1,4 +1,5 @@
 import {
+  SkillCardContainer,
   SkillCardList,
   SkillCardListItem,
   SkillCardTitle,
@@ -6,7 +7,6 @@ import {
   StyledCard,
 } from "./SkillCardStyles";
 
-import { CardContent } from "@mui/material";
 import { SkillIcon } from "../SkillIcon";
 import { SkillType } from "../../types";
 
@@ -14,7 +14,7 @@ export const SkillCard: React.FC<SkillType> = ({ title, skill }) => {
   return (
     <StyledCard>
       <SkillCardTitle variant="h5">{title}</SkillCardTitle>
-      <CardContent>
+      <SkillCardContainer>
         <SkillCardList>
           {skill.map((item) => (
             <SkillCardListItem key={item.name}>
@@ -23,7 +23,7 @@ export const SkillCard: React.FC<SkillType> = ({ title, skill }) => {
             </SkillCardListItem>
           ))}
         </SkillCardList>
-      </CardContent>
+      </SkillCardContainer>
     </StyledCard>
   );
 };

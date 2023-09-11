@@ -18,7 +18,7 @@ export const ProjectHeading = styled.h3`
 export const ProjectListContainer = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  height: max-content;
   gap: 10px;
 
   ${({ theme }) => css`
