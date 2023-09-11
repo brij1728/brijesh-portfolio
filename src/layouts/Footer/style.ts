@@ -6,8 +6,9 @@ export const Container = styled.div`
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   bottom: 0;
   width: 100%;

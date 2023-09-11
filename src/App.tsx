@@ -1,8 +1,7 @@
 import "./App.css";
 
-import { Footer, Navbar } from "./layouts";
-
 import { AppRouter } from "./routes";
+import { Navbar } from "./layouts";
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
       <div id="main-content">
         <AppRouter />
       </div>
-      <Footer />
+    
     </div>
   );
 }

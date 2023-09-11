@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 
 export const AppBar = styled(MuiAppBar)`
   background-color: ${({ theme }) => theme.primaryColors.primaryBackground};
-  border-bottom: 2px solid ${({ theme }) => theme.primaryColors.primaryBorder};
 
   ${({ theme }) => `
     @media (max-width: ${theme.breakpoints.sm}px) {

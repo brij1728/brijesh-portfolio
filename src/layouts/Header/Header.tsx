@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <Container>
       <HeaderText>
-        Hi, I'm Brijesh A Front End Developer Based In Ballia (U.P.)
+        Hi, I'm Brijesh a Front End Developer based in Ballia (U.P.)
       </HeaderText>
       <HeaderImage src={ProfilePhoto} alt="hero" />
     </Container>

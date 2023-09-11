@@ -10,7 +10,7 @@ export const primaryColors = {
 
 export const secondaryColors = {
   secondaryBackground: "#3498eb",
-  secondaryText: "#E1E1E1",
+  secondaryText: "#1976d2",
   accent2: "#E74C3C",
   secondaryBorder: "#28283D",
 };
