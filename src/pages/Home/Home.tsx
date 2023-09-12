@@ -1,5 +1,5 @@
-import { Contact, Projects, Skills } from "../../pages";
-import { Container, SectionWrapper } from "./HomeStyles";
+import { Contact, Projects, Resume, Skills } from "../../pages";
+import { Container, ResumeWrapper, SectionWrapper } from "./HomeStyles";
 import { useEffect, useRef } from "react";
 
 import { Header } from "../../layouts";
@@ -34,6 +34,9 @@ export const Home = () => {
   return (
     <Container>
       <Header />
+      <ResumeWrapper>
+        <Resume />
+      </ResumeWrapper>
       <SectionWrapper ref={projectRef}>
         <Projects />
       </SectionWrapper>
@@ -43,6 +46,7 @@ export const Home = () => {
       <SectionWrapper ref={skillsRef}>
         <Skills />
       </SectionWrapper>
+
       <SectionWrapper ref={contactRef}>
         <Contact />
       </SectionWrapper>

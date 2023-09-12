@@ -13,3 +13,11 @@ export const Container = styled.div`
 export const SectionWrapper = styled.div`
   margin-top: 16px;
 `;
+
+export const ResumeWrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  margin-top: 16px;
+  align-items: center;
+`;
