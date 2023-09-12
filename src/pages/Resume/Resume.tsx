@@ -6,7 +6,7 @@ export const Resume = () => {
       variant="contained"
       color="primary"
       component="a"
-      href="/brijesh_resume.pdf"
+      href={`/brijesh_resume.pdf?timestamp=${new Date().toISOString()}`}
       target="_blank"
       rel="noopener noreferrer"
     >
