@@ -28,10 +28,11 @@ export const projects: ProjectType[] = [
     projectUrl: "https://brijesh.app/",
   },
   {
-    title: "Meal Crafter App",
+    title: "Namaste Foodie App",
     description:
-      "Meal Crafter: An app built with React Native and TypeScript, offering intuitive meal planning and recipe management for a streamlined culinary experience.",
-    projectUrl: "",
+      "Meal Crafter: Developed a dynamic restaurant discovery application inspired by Akshay Saini’s Namaste React series, leveraging Swiggy’s live API for real-time data.",
+    githubUrl: "https://github.com/brij1728/namaste-foodie",
+    projectUrl: "https://namaste-react-foodie.vercel.app/",
   },
 ];
 
