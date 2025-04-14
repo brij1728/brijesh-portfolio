@@ -1,3 +1,4 @@
+import { IconType } from "react-icons";
 export type SkillType = {
   title: string;
   skill: SkillList[];
@@ -5,6 +6,6 @@ export type SkillType = {
 
 export type SkillList = {
   name: string;
-  icon?: string;
+  icon: string | IconType;
   level?: number;
 };

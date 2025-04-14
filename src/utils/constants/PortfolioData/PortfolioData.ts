@@ -12,6 +12,10 @@ import {
 } from "../../../assets";
 import { ProjectType, SkillType, SocialMediaType } from "../../../types";
 
+import { FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+
 export const projects: ProjectType[] = [
   {
     title: "Responsive UI App",
@@ -67,12 +71,12 @@ export const skills: SkillType[] = [
     skill: [
       {
         name: "React.js",
-        icon: "react-original",
+        icon: FaReact,
         level: 90,
       },
       {
-        name: "React Native",
-        icon: "reactnative-plain",
+        name: "Next.js",
+        icon: TbBrandNextjs,
         level: 80,
       },
       {
@@ -81,8 +85,8 @@ export const skills: SkillType[] = [
         level: 90,
       },
       {
-        name: "Styled Components",
-        icon: "styledcomponents-plain",
+        name: "Tailwind CSS",
+        icon: SiTailwindcss,
         level: 90,
       },
       {
